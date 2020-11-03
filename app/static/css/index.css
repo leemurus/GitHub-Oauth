@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Secular One', sans-serif;
+    background-image: url("../images/background.jpg");
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main .my_block img {
+    border-radius: 25em;
+    width: 23em;
+}
+
+.main .my_block .main_information {
+    text-align: center;
+}
+
+.main .numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main .numbers ul {
+    margin-left: -20px;
+    width: 90%;
+}
+
+.main .numbers ul li {
+    display: inline;
+    list-style: none;
+    margin: 20px;
+    font-size: 1.25em;
+}

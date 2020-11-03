@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main information</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/favicon.svg">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+</head>
+<body>
+<div class="main">
+    <div class="my_block">
+        <img src="{{ avatar_url }}" alt="">
+        <div class="main_information">
+            <p>Login: {{ login }}</p>
+            <p>Email: {{ email }}</p>
+        </div>
+    </div>
+    <div class="numbers">
+        <ul>
+            {% for number in numbers %}
+                <li>{{ number.number }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/static/js/index.js"></script>
+</body>
+</html>
